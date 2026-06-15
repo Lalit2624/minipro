@@ -10,7 +10,7 @@ connectDB();
 
 const app = express();
 
-const allowedOrigins = [process.env.FRONTEND_URL || 'http://localhost:3000', 'https://facefetch.vercel.app', 'https://facefind.vercel.app'];
+const allowedOrigins = [process.env.FRONTEND_URL || 'http://localhost:3000', 'https://facefind-mu.vercel.app', 'https://facefetch.vercel.app', 'https://facefind.vercel.app'];
 app.use(cors({ 
   origin: function(origin, callback){
     if(!origin) return callback(null, true);
